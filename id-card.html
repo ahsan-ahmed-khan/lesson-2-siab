@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+        .id-card {
+            position: relative;
+        }
+        .details {
+            position: absolute;
+            top: 59px;
+            left: 65px;
+            font-family: "Tw Cen MT";
+            line-height: 0.47;
+            font-size: 9px;
+            color: #000;
+        }
+        .details_01 {
+            position: absolute;
+            top: 231.5px;
+            left: 65px;
+            font-family: "Tw Cen MT",serif;
+            line-height: 0.96;
+            font-size: 9px;
+            color: #000;
+        }
+        .photo{
+            position: absolute;
+            top: 63px;
+            left: 218px;
+            color: #000;
+        }
+        .batch{
+            position: absolute;
+            top: 140px;
+            left: 13px;
+            font-family: "Tw Cen MT", serif;
+            font-size: 12px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="id-card">
+    <img src="https://i.ibb.co/9YcHWTB/ID-Card-SSUET-Final-1.png" alt="ID Card" width="300">
+    <div class="details">
+        <p id="name"></p>
+        <p id="SDo"></p>
+        <p id="Department"></p>
+        <p id="rollno"></p>
+        <p id="enroll"></p>
+    </div>
+    <div class="details_01">
+        <p id="CNIC"></p>
+        <p id="phone"></p>
+        <p id="address"></p>
+    </div>
+    <div class="photo">
+        <img id="photoImage" src="#" alt="Sample Photo" WIDTH="70" height="80">
+    </div>
+    <div class="batch">
+        <p id="batch_year"></p>
+    </div>
+</div>
+<script>
+
+    const nameElement = document.getElementById("name");
+    const Sdo = document.getElementById("SDo");
+    const dept = document.getElementById("Department");
+    const rollno = document.getElementById("rollno");
+    const enroll = document.getElementById("enroll");
+    const cnicno = document.getElementById("CNIC");
+    const phoneno = document.getElementById("phone");
+    const addressno = document.getElementById("address");
+    const photoImage = document.getElementById("photoImage");
+    const batch_01 = document.getElementById("batch_year");
+
+    let storedValue0 = sessionStorage.getItem('data_001');
+    let storedValue = storedValue0 ? storedValue0.split(",") : [];
+
+    let storedValue1 = sessionStorage.getItem('data_001_image');
+
+    console.log(storedValue)
+    console.log(storedValue1)
+
+
+    console.log("Data64: " + storedValue[8])
+    nameElement.textContent += storedValue[0];
+    Sdo.textContent += storedValue[1];
+    dept.textContent += storedValue[2];
+    rollno.textContent += storedValue[3];
+    enroll.textContent += storedValue[4];
+    cnicno.textContent += storedValue[5];
+    phoneno.textContent += storedValue[6];
+    addressno.textContent += storedValue[7];
+    batch_01.textContent += storedValue[8]
+    photoImage.src = storedValue1; // Change this to the URL of the photo
+
+</script>
+</body>
+</html>
