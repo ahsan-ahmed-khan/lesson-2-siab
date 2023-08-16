@@ -8,59 +8,81 @@
     <style>
         body {
             background-color: #f8f9fa;
+            background-image: url("https://i.postimg.cc/g0w0KT8W/pngtree-technology-background-binary-computer-code-vector-design-image-458702.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
         }
         .container {
             margin-top: 50px;
+            margin: 50px;
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 70%;
+
         }
+        .bt1 button:hover{
+            background-color: aquamarine;
+        }
+        
     </style>
 </head>
 <body>
 <div class="container">
     <h2>Student Information</h2>
     <form>
+        <b>
 
         <div class="mb-3">
-            <label for="studentName" class="form-label">Student Name</label>
+            <label for="studentName" class="form-label">Student Name:</label>
             <input type="text" class="form-control" id="studentName" required>
         </div>
         <div class="mb-3">
-            <label for="studentClass" class="form-label">Student Guardian Name</label>
+            <label for="studentClass" class="form-label">Student Guardian Name:</label>
             <input type="text" class="form-control" id="studentClass" required>
         </div>
         <div class="mb-3">
-            <label for="studentProgram" class="form-label">Student Department</label>
+            <label for="studentProgram" class="form-label">Student Department:</label>
             <input type="text" class="form-control" id="studentProgram" required>
         </div>
         <div class="mb-3">
-            <label for="studentProgram" class="form-label">Student Batch</label>
+            <label for="studentProgram" class="form-label">Student Batch:</label>
             <input type="text" class="form-control" id="batch_no" required>
         </div>
         <div class="mb-3">
-            <label for="studentRollNo" class="form-label">Student Roll No.</label>
+            <label for="studentRollNo" class="form-label">Student Roll Number:</label>
             <input type="text" class="form-control" id="studentRollNo" required>
         </div>
         <div class="mb-3">
-            <label for="studentRollNo" class="form-label">Student Enrollment No.</label>
+            <label for="studentRollNo" class="form-label">Student Enrollment Number:</label>
             <input type="text" class="form-control" id="studentenrollNo" required>
         </div>
         <div class="mb-3">
-            <label for="studentRollNo" class="form-label">Student CNIC No.</label>
+            <label for="studentRollNo" class="form-label">Student CNIC Number:</label>
             <input type="text" class="form-control" id="studentCNICNo" required>
         </div>
         <div class="mb-3">
-            <label for="studentRollNo" class="form-label">Student Phone No.</label>
+            <label for="studentRollNo" class="form-label">Student Phone Number:</label>
             <input type="text" class="form-control" id="studentPhoneNo" required>
         </div>
         <div class="mb-3">
-            <label for="studentRollNo" class="form-label">Student Address</label>
+            <label for="studentRollNo" class="form-label">Student Address:</label>
             <input type="text" class="form-control" id="studentAddress" required>
         </div>
         <div class="mb-3">
-            <label for="profilePhoto" class="form-label">Profile Photo</label>
+            <label for="profilePhoto" class="form-label">Profile Photo:</label>
             <input type="file" class="form-control" id="profilePhoto" accept="image/*">
         </div>
-        <button style="width: 100%; padding: 10px; background-color: #ff0099; color: #fff;
+        <div class="bt1">
+        <button style="width: 100%; padding: 10px; background-color: #d900ff; color: #fff;
         border: none; border-radius: 3px; cursor: pointer;" type="button" class="btn btn-primary" onclick="generateCard()">Generate Card</button>
+        </div>
+    </b>
     </form>
 <!--    <div id="cardOutput" class="mt-3"></div>-->
 </div>
