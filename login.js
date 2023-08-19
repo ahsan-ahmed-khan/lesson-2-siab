@@ -6,8 +6,9 @@ function login() {
         window.alert("Login Success!");
         window.location.href = "index.html";
     }
+    (username === "ahmed" && password == "ahmed123") || (username === "ahsan" && password == "ahsan123") ? login_success() : window.alert("Login Failed");
 
-    username === "ahsan" && password == "ahsan123" ? login_success() : window.alert("Login Failed");
+    
 
 
 };

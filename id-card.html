@@ -12,7 +12,11 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f1f1f1;
+            background-color: #ffffff;
+            background-image: url("https://i.postimg.cc/g0w0KT8W/pngtree-technology-background-binary-computer-code-vector-design-image-458702.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
         .id-card {
             position: relative;
@@ -22,6 +26,7 @@
             top: 59px;
             left: 65px;
             font-family: "Tw Cen MT";
+            font-weight: 350;
             line-height: 0.47;
             font-size: 9px;
             color: #000;
@@ -31,6 +36,7 @@
             top: 231.5px;
             left: 65px;
             font-family: "Tw Cen MT",serif;
+            font-weight: 350;
             line-height: 0.96;
             font-size: 9px;
             color: #000;
@@ -53,7 +59,7 @@
 </head>
 <body>
 <div class="id-card">
-    <img src="https://i.ibb.co/9YcHWTB/ID-Card-SSUET-Final-1.png" alt="ID Card" width="300">
+    <img src="https://i.postimg.cc/S4HYwKtG/ID-Card-SSUET-Final-1.png" alt="ID Card" width="300">
     <div class="details">
         <p id="name"></p>
         <p id="SDo"></p>
@@ -73,6 +79,15 @@
         <p id="batch_year"></p>
     </div>
 </div>
+<div style="position: fixed; bottom: 5%; left: 50%; transform: translateX(-50%); width: 50px;" class="no-print">
+
+    <a href="javascript:window.print();">
+        <img src="https://lesson2siab.netlify.app/print1.jpg" border="0" title="Print or Save as PDF">
+    </a>
+    <br>
+
+</div>
+
 <script>
 
     const nameElement = document.getElementById("name");
